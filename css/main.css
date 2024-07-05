@@ -1,3 +1,9 @@
+
+/* FONTS */ /* barlow-condensed-regular - latin */
+@font-face {
+  font-family: "Barlow";
+  src: url("../Fonts/Livvic-Regular.ttf");
+
 .container {
   max-width: 1150px;
   margin: 0 auto;
@@ -15,6 +21,158 @@
   list-style: none;
   text-decoration: none;
   box-sizing: border-box;
+
+}
+
+body {
+  font-family: "Barlow";
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.site-header {
+  padding: 40px 0 62px 0;
+  font-family: Barlow Condensed;
+  position: fixed;
+  width: 100%;
+  z-index: 50;
+}
+
+.header {
+  margin-top: 20px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 507px;
+  z-index: 50;
+  margin: 0 auto;
+}
+
+.header__logo-link {
+  margin-left: 55px;
+}
+.header__logo-link::after {
+  margin-left: 64px;
+  content: "";
+  position: absolute;
+  width: 473px;
+  height: 1px;
+  bottom: 0px;
+  top: 20px;
+  background-color: white;
+}
+
+.header__list {
+  padding: 36px 0 0 126px;
+  margin-left: 610px;
+  background-color: #1A1B26;
+  position: fixed;
+  width: 830px;
+  height: 96px;
+  z-index: 50;
+  display: flex;
+  align-self: center;
+  gap: 100px;
+}
+
+.header__link {
+  margin-top: 50px;
+  text-transform: uppercase;
+  margin-bottom: 0px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  color: white;
+  position: relative;
+  transition: all 0.3s linear;
+}
+.header__link:hover::after {
+  content: "";
+  position: absolute;
+  width: 104px;
+  height: 3px;
+  bottom: -40px;
+  right: 0;
+  left: -11px;
+  background-color: white;
+}
+
+.header__link-span {
+  margin-bottom: 0px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19px;
+  color: white;
+}
+
+.crew__hero-section {
+  width: 100%;
+}
+
+.crew-body {
+  background-image: url(../../images/bg-crew.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.crew__hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0px;
+}
+
+.crew__wrapper {
+  padding: 198px 0 98px;
+}
+
+.crew__meet {
+  display: flex;
+  gap: 24px;
+}
+.crew__meet h1 {
+  margin-bottom: 0px;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 33px;
+  color: white;
+  margin-bottom: 154px;
+}
+.crew__meet strong {
+  margin-bottom: 0px;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 33px;
+  color: rgb(86, 82, 82);
+}
+
+.crew__commander h2 {
+  margin-bottom: 15px;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 36.67px;
+  color: rgb(86, 82, 82);
+}
+.crew__commander p {
+  width: 100%;
+  margin-bottom: 27px;
+  font-size: 56px;
+  font-weight: 400;
+  line-height: 64.18px;
+  color: white;
+}
+.crew__commander span {
+  width: 444px;
+  display: inline-block;
+  margin-bottom: 120px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 32px;
+  color: white;
 }
 
 body {

@@ -115,12 +115,12 @@ body {
   background-size: bottom center;
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
-
+}
 /* FONTS */ /* barlow-condensed-regular - latin */
 @font-face {
   font-family: "Barlow";
   src: url("../Fonts/Livvic-Regular.ttf");
-
+}
 .container {
   max-width: 1150px;
   margin: 0 auto;
@@ -132,6 +132,7 @@ body {
   font-family: "Barlow";
   src: url("../fonts/barlow-condensed-v12-latin-regular.woff2");
 }
+
 * {
   margin: 0;
   padding: 0;
@@ -286,6 +287,7 @@ body {
   justify-content: space-between;
   margin-left: 130px;
   margin-bottom: 101px;
+}
 .header {
   margin-top: 20px;
   position: relative;

@@ -1,0 +1,177 @@
+.site-header {
+    padding: 20px 0;
+    font-family:Barlow Condensed;
+    position: fixed;
+    width: 100%;
+    z-index: 50;
+}
+.header {
+    margin-top: 20px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 507px;
+    z-index: 50;
+}
+.header__logo-link {    
+    margin-left: 55px;
+
+    &::after{
+        margin-left: 64px;
+        content: "";
+        position: absolute;
+        width: 473px;
+        height: 1px;
+        bottom: 0px;
+        top: 20px;
+        background-color: white;
+
+    }
+}
+.header__list {
+    padding: 36px 0 0 126px;
+    margin-left: 610px;
+    background-color: #1A1B26;
+    position: fixed;
+    width: 830px;
+    height: 96px;
+    z-index: 50;
+    display: flex;
+    align-self: center;
+    gap: 100px;
+}
+.header__link{
+    margin-top: 50px;
+    text-transform: uppercase;
+    @include textStyle($FS:16px, $FW:400, $LH:19px, $MB:0px, $CLR:white);
+    position: relative;
+    transition: all 0.3s linear;
+
+        &:hover{
+            &::after{
+                content: "";
+                position: absolute;
+                width: 104px;
+                height: 3px;
+                bottom: -40px;
+                right: 0;
+                left: -11px;
+                background-color: white;
+            }
+
+        }
+    
+
+}
+.header__link-span{
+    @include textStyle($FS:16px, $FW:700, $LH:19px, $MB:0px, $CLR:white);
+}
+.hero-section {
+    font-family: Bellefair;
+    padding: 86px 0 ;
+    background-image: url("../../images/bg-technology.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-size: bottom center;
+    backdrop-filter: blur(10px);
+    width: 100%;
+    z-index: 50;
+}
+
+.hero__title-wrapper {
+    width: 360px;
+    margin-left: 166px;
+    margin-bottom: 137px;
+    margin-top: 76px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 24px;
+}
+.hero__title--span {
+    @include textStyle($FS:28px, $FW:700, $LH:33px, $MB:0px, $CLR:#545353);
+}
+.hero__title{
+    @include textStyle($FS:28px, $FW:400, $LH:33px, $MB:0px, $CLR:white);
+}
+.wrapper{
+    width: 88px;
+    display: inline block;
+    margin-left: 115px;
+    margin-bottom: 75px;
+    margin-top: 25px;
+}
+.hero__strong {
+    padding: 24px 32px;
+    border: 1px solid #505050;
+    border-radius: 50%;
+    color: white;
+    background-color: transparent;
+    transition: all 0.3s ease;
+
+    &:hover{
+        color: black;
+        border: none;
+        background-color: white;
+    }
+}
+.hero__strong-2{
+    padding: 24px 32px;
+    color: white;
+    border: 1px solid #505050;
+    border-radius: 50%;
+    background-color: transparent;
+    transition: all 0.3s ease;
+
+    &:hover{
+        color: black;
+        border: none;
+        background-color: white;
+    }
+}
+.hero__strong-3{
+    padding: 24px 32px;
+    color: white;
+    border: 1px solid #505050;
+    border-radius: 50%;
+    background-color: transparent;
+    transition: all 0.3s ease;
+
+    &:hover{
+        color: black;
+        border: none;
+        background-color: white;
+    }
+}
+.hero__content-wrapper {
+    display: flex;
+    position: relative;
+}
+.contents__wrapper{
+    display: flex;
+    padding: 30px;
+}
+.content__wrapper{
+    width: 479px;
+    margin-left: 80px;
+}
+.content__strong {
+    font-family: "Bellefair";
+    @include textStyle($FS:16px, $FW:400, $LH:19px, $MB:11px, $CLR:#D0D6F9);
+}
+.content__title {
+    @include textStyle($FS:56px, $FW:400, $LH:64px, $MB:17px, $CLR:white);
+}
+.content__text {
+    @include textStyle($FS:18px, $FW:400, $LH:32px, $MB:0px, $CLR:#D0D6F9);
+}
+.content__img__wrapper {
+    position: absolute;
+    right: 1px;
+    top: 177px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 130px;
+    margin-bottom: 101px;
+}
